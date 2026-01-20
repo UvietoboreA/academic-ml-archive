@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Heart Disease Classification </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+
+    <body>
+
+        <center>
+
+        <h1> Vitals for Heart Disease Check </h1>
+
+        <form action='/predict' method='POST'>
+
+            <label for='Age'>Age: </label>
+            <input type='number' min=0 name='Age'></input> 
+            <br> <br>
+
+            <label for='Sex'>Sex: </label>
+            <select id='Sex' name='Sex'>
+                <option value='M'>M</option>
+                <option value='F'>F</option>
+            </select>
+            <br> <br>
+
+            <label for='ChestPainType'>ChestPainType: </label>
+            <select id='ChestPainType' name='ChestPainType'>
+                <option value='ATA'>ATA</option>
+                <option value='NAP'>NAP</option>
+                <option value='ASY'>ASY</option>
+            </select>
+            <br> <br>
+
+            <label for='RestingBP'>RestingBP: </label>
+            <input type='number' min=0 name='RestingBP'></input> 
+            <br> <br>
+
+            <label for='Cholesterol'>Cholesterol: </label> 
+            <input type='number' min=0 name='Cholesterol'></input> 
+            <br> <br>
+
+            <label for='FastingBS'>FastingBS: </label> 
+            <input type='number' name='FastingBS'></input> 
+            <br> <br>
+
+            <label for='RestingECG'>RestingECG: </label> 
+            <select id='RestingECG' name='RestingECG'>
+                <option value='Normal'>Normal</option>
+                <option value='ST'>ST</option>
+            </select>
+            <br> <br>
+
+            <label for='MaxHR'>MaxHR: </label> 
+            <input type='number' name='MaxHR'></input> 
+            <br> <br>
+
+            <label for='ExerciseAngina'>ExerciseAngina: </label>
+            <select id='ExerciseAngina' name='ExerciseAngina'>
+                <option value='Y'>Y</option>
+                <option value='N'>N</option>
+            </select>
+            <br> <br>
+
+            <label for='Oldpeak'>Oldpeak: </label> 
+            <input type='number' name='Oldpeak'></input> 
+            <br> <br>
+
+            <label for='ST_Slope'>ST_Slope: </label> 
+            <select id='ST_Slope' name='ST_Slope'>
+                <option value='Up'>Up</option>
+                <option value='Flat'>Flat</option>
+            </select> 
+            <br> <br>
+
+            
+            <input type='submit' value='Submit'></input>
+            <input type='reset' value='Reset'></input>
+
+        </form>
+
+        </center>
+
+    </body>
+
+</html>
+
